@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.chat-background {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNDM2ODY4YjM4ZmQ5ZmY5ZjBiZjM4ZjM5ZjE4ZmM1ZmM1ZjM1YzFmYiZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/U3qYN8S0j3bpK/giphy.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.message-container {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Dark mode styles */
+.dark .chat-background {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNDM2ODY4YjM4ZmQ5ZmY5ZjBiZjM4ZjM5ZjE4ZmM1ZmM1ZjM1YzFmYiZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/U3qYN8S0j3bpK/giphy.gif');
+}
+
+.dark .glass-effect {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.dark .message-container {
+  background: rgba(0, 0, 0, 0.4);
+}
